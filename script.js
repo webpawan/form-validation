@@ -10,12 +10,13 @@ const senddata = (data, curdata,name) => {
     if (data === curdata) {
         alert(`thankyou ${name}`);
         form.reset();
-        location.href = `regis.html?name=${name}`
         for (let i = 0; i < group.length; i++){
             if (group[i].className === 'formgroup right'){
                  group[i].className = "formgroup"; 
             }
         }
+        location.href = `regis.html?name=${name}`
+      
     }
 }
 
