@@ -8,14 +8,15 @@ const btn = document.getElementById('btn');
 
 const senddata = (data, curdata,name) => {
     if (data === curdata) {
-        alert(`thankyou ${name}`);
+        // alert(`thankyou ${name}`);
+        location.href = `regis.html?name=${name}`
         form.reset();
         for (let i = 0; i < group.length; i++){
             if (group[i].className === 'formgroup right'){
                  group[i].className = "formgroup"; 
             }
         }
-        location.href = `regis.html?name=${name}`
+        
       
     }
 }
